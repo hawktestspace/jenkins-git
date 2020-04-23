@@ -10,5 +10,10 @@ pipeline {
                 '''
             }
         }
+        stage('DDH Test') {
+            steps {
+                sh 'echo "Executing \"DDH Test\" stage from Jenkinsfile"'
+            }
+        }
     }
 }
